@@ -1,1 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  border-bottom: 2px solid black;
+}
+
+nav {
+  float: left;
+  width: 15%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 400px;
+}
+
+main {
+  float: right;
+  width: 85%;
+}
+
+#bigLinks a {
+  border: 2px solid black;
+  height: 300px;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  clear: both;
+  border-top: 2px solid black;
+}
+
+footer ul li {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}
