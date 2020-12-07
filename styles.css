@@ -35,6 +35,14 @@ header img {
   margin-left: 75px;
 }
 
+header #mean {
+  height: 60px;
+  width: 250px;
+  float: right;
+  margin-right: 75px;
+  margin-top: 8px;
+}
+
 header p {
   line-height: 79px;
   font-family: Arial, sans-serif;
@@ -57,6 +65,10 @@ nav #here {
   color: hsl(240, 20%, 40%);
   background-color: hsl(240, 0%, 75%);
 }
+
+/* nav .ext {
+  background-color: hsl(275, 75%, 85%);
+} */
 
 nav h2 {
   text-align: center;
@@ -86,6 +98,17 @@ nav a {
 
 nav a:hover {
   background-color: hsl(235, 90%, 90%);
+}
+
+nav a[target="_blank"] {
+  background-color: hsl(275, 75%, 85%);
+  background-image: url('images/ext4.png');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+nav a[target="_blank"]:hover {
+  background-color: hsl(275, 90%, 90%);
 }
 
 main {
@@ -128,8 +151,17 @@ main h1 {
 }
 
 #bigLinks a:hover {
-  background-color: hsl(240, 60%, 20%);
+  /* background-color: hsl(240, 60%, 20%); */
+  background-image: url('images/hover.png');
   color: white;
+}
+
+#bigLinks a[target="_blank"] {
+  background-color: hsl(275, 60%, 16%);
+}
+
+#bigLinks a[target="_blank"]::after {
+  content: url('images/ext2.png');
 }
 
 footer {
@@ -144,6 +176,28 @@ footer {
 
 ul {
   list-style-type: none;
+}
+
+#resources, #team {
+  border: 1px solid black;
+  width: 85%;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: hsl(240, 8%, 92%);
+  text-align: center;
+}
+
+#resources ul {
+  padding-bottom: 10px;
+}
+
+#resources li {
+  padding: 2px;
+}
+
+#team h3 {
+  font-family: Arial, sans-serif;
+  padding: 5px;
 }
 
 footer ul {
