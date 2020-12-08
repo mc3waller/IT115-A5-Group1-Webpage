@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-shadow: 1px 1px 4px rgb(173, 173, 173);
+  font-family: Verdana, sans-serif;
 }
 
 body {
@@ -38,16 +40,17 @@ header img {
 header #mean {
   height: 60px;
   width: 250px;
-  float: right;
-  margin-right: 75px;
   margin-top: 8px;
+  margin-left: 450px;
+  float: left;
 }
 
 header p {
   line-height: 79px;
-  font-family: Arial, sans-serif;
   font-size: 1.25em;
-  text-align: center;
+  float: left;
+  margin-left: 20px;
+
 }
 
 nav {
@@ -55,7 +58,7 @@ nav {
   width: 15%;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
-  height: 400px;
+  height: 100%;
   position: fixed;
   top: 79px;
   background-color: hsl(234, 4%, 55%);
@@ -66,34 +69,29 @@ nav #here {
   background-color: hsl(240, 0%, 75%);
 }
 
-/* nav .ext {
-  background-color: hsl(275, 75%, 85%);
-} */
-
 nav h2 {
   text-align: center;
-  font-family: Arial, sans-serif;
   font-weight: normal;
   padding: 10px 0;
   background-color: hsl(235, 75%, 85%);
 }
 
-nav ul {
-  margin-top: 50px;
-}
-
 nav a {
   display: block;
-  width: 75%;
+  width: 100%;
   border: 1px solid black;
+  border-right-width: 0;
+  border-bottom-width: 0;
   padding: 9px;
-  margin: 10px auto;
   text-align: center;
   background-color: hsl(235, 75%, 85%);
-  /* background-color: #8d94da; */
   color: black;
   font-size: 1.15em;
   text-decoration: none;
+}
+
+nav ul:last-child {
+  border-bottom: 1px solid black;
 }
 
 nav a:hover {
@@ -121,7 +119,6 @@ main {
 
 main h1 {
   text-align: center;
-  font-family: Arial, sans-serif;
 }
 
 #description {
@@ -164,21 +161,11 @@ main h1 {
   content: url('images/ext2.png');
 }
 
-footer {
-  clear: both;
-  width: 100%;
-  border-top: 2px solid black;
-  height: 50px;
-  line-height: 50px;
-  background-color: hsl(240, 6%, 14%);
-  color: white;
-}
-
 ul {
   list-style-type: none;
 }
 
-#resources, #team {
+#resources {
   border: 1px solid black;
   width: 85%;
   margin: 5px auto;
@@ -195,9 +182,48 @@ ul {
   padding: 2px;
 }
 
-#team h3 {
-  font-family: Arial, sans-serif;
+#team {
+  width: 85%;
+  margin: 5px auto;
   padding: 5px;
+}
+
+#team h3 {
+  padding: 5px;
+  text-align: center;
+}
+
+#team td {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: hsl(240, 8%, 92%);
+}
+
+#team tr {
+  margin-bottom: 5px;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  border-top: 2px solid black;
+  height: 50px;
+  line-height: 50px;
+  background-color: hsl(240, 6%, 14%);
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+footer #foot {
+  text-align: center;
+  margin: 0 auto;
+  width: 500px;
+}
+
+#foot p {
+  float: right;
+  padding: 0 30px;
 }
 
 footer ul {
@@ -207,14 +233,14 @@ footer ul {
 
 footer ul li {
   float: left;
-  width: 20%;
+  width: 33%;
   text-align: center;
-  display: block;
   margin: 0 auto;
 }
 
 footer a {
   color: hsl(240, 100%, 92%);
+  text-decoration: none;
 }
 
 footer a:hover {
