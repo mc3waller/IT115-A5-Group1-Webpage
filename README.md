@@ -11,7 +11,7 @@ For more information, check out our <a href="resources.html">Resources</a> Page.
 * **Alexander Baker** - Project Lead; Web Page Team
 * **Malik Waller** - Co-Project Lead; Web Page Lead (mc3waller@hotmail.com)
 * **Rory Hackney** - Web Page Team (roryhackney@gmail.com)
-* **Thomas Mendenhall** - Stack Team Lead (endentm@gmail.com)
+* **Thomas Mendenhall** - Stack Team Lead (mendentm@gmail.com)
 * **Gift Homsaen** - Stack Team (tanakan.gth@gmail.com)
 * **Hsu-Sheng Ko** - Stack Team (jko.mech@gmail.com)
 * **Mich Iwata** - Stack & Web App Team (iwata.mich@gmail.com)
