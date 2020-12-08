@@ -2,31 +2,41 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>IT115 G1 MEAN Stack Website</title>
+    <title>App Demo | G1 MEAN Stack</title>
     <link href="styles.css" type="text/css" rel="stylesheet">
     <script src="./script.js" defer></script>
 </head>
 
 <body>
 <header>
-    <img src="images/logo.png" alt="Group 1 Logo">
-    <a target="_blank" href="http://meanjs.org/"><img id="mean" src="images/meanlogo.png" alt="MEAN Stack Logo"></a>
-    <p>Group 1 Final Project</p>
+    <div id="header-elements">
+        <!-- <img src="images/logo.png" alt="Group 1 Logo"> -->
+        <p></p>
+        <a target="_blank" href="http://meanjs.org/"><img id="mean" src="images/meanlogo2.png" alt="MEAN Stack Logo"></a>
+        <p>MEAN Stack Tutorial</p>
+    </div>
 </header>
 <nav>
-    <h2>Navigation</h2>
+    <!-- <h2>Navigation</h2> -->
     <ul>
-        <li><a href="index.html" id="here">Website</a></li>
+        <li><a href="index.html" id="here">Home</a></li>
+        <li><a id="here" href="app.html">App Demo</a></li>
         <li><a target="_blank" href="https://docs.google.com/document/d/16S-mt_VoqTZqmTF03EPwK66LWh8O4KrqfuTyv6OZNHA/edit?usp=sharing">Stack Tutorial</a></li>
         <li><a target="_blank" href="https://docs.google.com/document/d/1RqxATfU5Jq-IOH-8gT2jlV_3zty5t_hHG3m15Z26uSk/edit?usp=sharing">App Tutorial</a></li>
+        <li><a href="https://github.com/olassia/IT115-G1-A5" target="_blank">GitHub Repo</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a id="here" href="app.html">Our App</a></li>
+        <li><a href="team.html">The Team</a></li>
     </ul>
 </nav>
 
 <main>
-    <h1>QR Code generator</h1>
+    <h1>QR Code Generator</h1>
+    <h3>Web App Demo</h3>
+    
+    <hr />
+    
+    <p style="text-align: center"><strong>Type something into the text field below to generate a code!</strong></p>
+    <br>
     <div class="qrbox">
         <img id="qr" src="images/default.png" alt="qr-code" class="qrimg"/>
         <textarea></textarea>
@@ -34,13 +44,9 @@
     </div>
 </main>
 <footer>
-    <ul>
-        <li><a href="index.html">Website</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li>Copyright &copy;2020</li>
-        <li><a href="">Valid HTML</a></li>
-        <li><a href="">Valid CSS</a></li>
-    </ul>
+    <div id="foot">
+        <p>Copyright &copy; 2020 Group 1 | <a href="">Valid HTML</a> | <a href="">Valid CSS</a></p>
+    </div>
 </footer>
 </body>
 </html>
