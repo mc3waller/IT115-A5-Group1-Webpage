@@ -23,9 +23,9 @@
         <li><a id="here" href="app.html">App Demo</a></li>
         <li><a target="_blank" href="https://docs.google.com/document/d/16S-mt_VoqTZqmTF03EPwK66LWh8O4KrqfuTyv6OZNHA/edit?usp=sharing">Stack Tutorial</a></li>
         <li><a target="_blank" href="https://docs.google.com/document/d/1RqxATfU5Jq-IOH-8gT2jlV_3zty5t_hHG3m15Z26uSk/edit?usp=sharing">App Tutorial</a></li>
-        <li><a href="https://github.com/olassia/IT115-G1-A5" target="_blank">GitHub Repo</a></li>
+        <li><a href="https://github.com/olassia/IT115-G1-A5" target="_blank">Web App Repo</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="team.html">The Team</a></li>
+        <li><a href="team.html">Project Team</a></li>
     </ul>
 </nav>
 
@@ -34,13 +34,14 @@
     <h3>Web App Demo</h3>
     
     <hr />
-    
-    <p style="text-align: center"><strong>Type something into the text field below to generate a code!</strong></p>
-    <br>
-    <div class="qrbox">
-        <img id="qr" src="images/default.png" alt="qr-code" class="qrimg"/>
-        <textarea></textarea>
-        <button>Generate QR Code</button>
+
+    <div id="demo-area">
+        <div class="qrbox">
+            <img id="qr" src="images/default.png" alt="qr-code" class="qrimg"/>
+            <textarea></textarea>
+            <button>Generate QR Code</button>
+        </div>
+        <p style="font-size: 1.2em; line-height: 1.5em; text-shadow: 1px 1px 4px rgb(199, 199, 199)"><strong>How does it work?</strong><br>The data encoded within a QR code - comprised of either numeric and alphanumeric characters, bytes, or kanji - converts into a unique two-dimensional arrangement of squares (or “data-modules”). The data is then translated back to its original, human-intelligible form when read by an optical scanner, such as that of a smartphone camera.<br><br>The key components of any QR are code are the data modules, position markers, and what is referred to as the “quiet zone”. The data modules are the black squares, which spatially make up the majority of the code, that translate the encoded data in a way that the scanner can interpret. The position markers are the three larger squares, each consisting of an inner and outer eye, positioned at the corners of the code and serve to make the data modules and scanning direction quickly and accurately locatable by scanners and cameras. Lastly, there is the quiet zone: the component which allows code readers to optically place the beginning and end of the code as indicated by the blank area surrounding all of the other components collectively<br><br>Our QR code generator, written in JavaScript, is one such example of this structure. To demonstrate, type anything into the text field below the code and click the “Generator QR code” button further below to generate a new code!</p>
     </div>
 </main>
 <footer>

@@ -102,6 +102,7 @@ nav a {
   font-size: 1.15em;
   text-decoration: none;
   margin-top: -1px;
+  text-shadow: 1px 1px 4px rgb(22, 22, 22);
 }
 
 nav ul:last-child {
@@ -172,15 +173,29 @@ h3 {
 #description {
   /* border: 1px solid black; */
   /* padding: 5px 5px 0 5px; */
-  margin: 5px auto 50px auto;
-  width: 85%;
+  /* margin: 5px auto 50px auto; */
   /* background-color: hsl(240, 8%, 92%); */
   font-family: sans-serif;
-  text-shadow: 1px 1px 4px rgb(206, 206, 206);
+
+  overflow:hidden;
+  margin: 0 auto;
+  min-width: 1100px;
+
+  margin-bottom: 10px;
 }
 
-#description p {
-  margin-bottom: 5px;
+#description #mean-intro {
+  float: left;
+  width: 615px;
+}
+
+#description img {
+  float: right;
+  margin-top: 10px;
+}
+
+#description a {
+  color: hsl(29, 72%, 56%);
 }
 
 /* ==================================================
@@ -208,32 +223,34 @@ BIG LINKS
   line-height: 300px;
   font-size: 3em;
   text-decoration: none;
-  background-color: hsl(240, 60%, 16%);
-  color: hsl(240, 100%, 92%);
+  background-color: hsl(0, 0%, 27%);
+  color: white;
   float: left;
   margin-left: 1%;
+
+  text-shadow: 1px 1px 4px rgb(22, 22, 22);
+
+  border-radius: 4px; 
+
+  -webkit-box-shadow: 0 6px 6px -6px black;
+  -moz-box-shadow: 0 6px 6px -6px black;
+  box-shadow: 0 6px 6px -6px black;
+
+  font-weight: bold;
 }
 
 .bigLinks a:hover {
   /* background-color: hsl(240, 60%, 20%); */
   background-image: url('images/hover.png');
-  color: white;
+  color: rgb(231, 231, 231);
 }
 
 .bigLinks a[target="_blank"] {
-  background-color: hsl(275, 60%, 16%);
+  background-color: hsl(0, 0%, 27%);
 }
 
 .bigLinks a[target="_blank"]::after {
-  content: url('images/ext2.png');
-}
-
-/* ==================================================
-
-===================================================== */
-
-ul {
-  list-style-type: none;
+  content: url('images/extred.png');
 }
 
 /* ==================================================
@@ -253,7 +270,7 @@ RESOURCES
   /* border: 1px solid black; */
 
   /* margin: 5px auto; */
-  padding: 5px;
+  /* padding: 5px; */
   /* background-color: hsl(240, 8%, 92%); */
   float: left;
   display: block;
@@ -263,15 +280,31 @@ RESOURCES
   float:left;
   display: block;
   margin-left: 5%;
+  width: 30%;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 30px;
+  text-shadow: 1px 1px 4px rgb(199, 199, 199);
 }
 
 #resources ul {
-  padding-bottom: 10px;
   list-style-type: disc;
+  margin-left: 10%;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 30px;
 }
 
 #resources li {
   padding: 2px;
+}
+
+#resources a {
+  color: hsl(0, 50%, 47%);
+}
+
+#resources a:visited {
+  color: hsl(0, 50%, 47%);
 }
 
 /* ==================================================
@@ -304,7 +337,16 @@ TEAM DISPLAY
   float:left;
   margin: 10px 0px 30px 95px;
 
-  text-shadow: 1px 1px 4px rgb(206, 206, 206);
+  text-shadow: 1px 1px 4px rgb(165, 165, 165);
+
+  background-color: rgb(228, 228, 228);
+
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 4px; 
+
+  -webkit-box-shadow: 0 5px 6px -6px black;
+  -moz-box-shadow: 0 5px 6px -6px black;
+  box-shadow: 0 5px 6px -6px black;
 }
 
 .member-card .role {
@@ -322,15 +364,25 @@ TEAM DISPLAY
 }
 
 /* ==================================================
-
+GENERAL FORMATTING
 ===================================================== */
 
 hr {
   margin: 20px 0px 20px 0px;
 }
 
-/* ==================================================
+ul {
+  list-style-type: none;
+}
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==================================================
+FOOTER
 ===================================================== */
 
 footer {
@@ -378,6 +430,22 @@ footer a:hover {
 }
 
 /* ==================================================
+DEMO PAGE CONTENT
+===================================================== */
+
+#demo-area {
+  overflow:hidden;
+  margin: 0 auto;
+  max-width: 960px;
+  min-width: 900px;
+}
+
+#demo-area p {
+  float: right;
+  width: 600px;
+}
+
+/* ==================================================
 QR CODE APP
 ===================================================== */
 
@@ -386,6 +454,7 @@ QR CODE APP
   grid-template-columns: 1fr auto;
   grid-row-gap: 10px;
   overflow: hidden;
+  float: left;
 }
 
 .qrimg {
