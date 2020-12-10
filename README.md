@@ -5,7 +5,7 @@ This website hosts tutorials for creating a MEAN Stack and using it to run a web
 
 A MEAN Stack is a Javascript based free and open source collection of software that allows the user to host applications on the web.
 It includes <b>MongoDB</b> (database), <b>Express.js</b> (server framework), <b>Angular.js</b> (web framework), and <b>Node.js</b> (runtime environment).
-For more information, check out our <a href="/public/resources.html">Resources</a> Page.
+For more information, check out our <a href="https://mc3waller.github.io/IT115-A5-Group1-Webpage/public/resources.html">Resources</a> Page.
 
 ## Team Members
 * **Alexander Baker** - Project Lead; Web Page Team
